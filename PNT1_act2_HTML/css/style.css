@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');/*Letra del titulo*/
+
+body {
+    margin: 0;
+    background-color: #F1EFEF;
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.banner {
+    background-image: url(./fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 530px
+}
+
+.header {
+    background-color: transparent; /* Color de fondo de la cabecera */
+    color: black; /* Color del texto en la cabecera */
+    padding: 20px; /* Espacio interno en la cabecera para separar el contenido */
+    text-align: center; /* Alineación del texto en el centro */
+}
+
+.header h1 {
+    font-family: 'Roboto Slab', serif;
+    background-color: #ff9900; /* Color de fondo del h1 */
+    border-radius: 10px; /* Radio del borde para hacerlo redondeado */
+    padding: 16px 30px; /* Espaciado interno para separar el texto del borde */
+    display: inline-block; /* Hace que el h1 se ajuste automáticamente al contenido */
+    margin-bottom: 0px;
+  }
+
+.header nav ul {
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-right: 20px; /* Espaciado entre elementos de la lista */
+}
+
+.header nav ul li a {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+    font-weight: bold; /* Texto en negrita para los enlaces */
+    transition: color 0.3s;
+    padding: 8px 16px; /* Espaciado interno para los enlaces */
+    margin: 0 10px; /* Espaciado entre los enlaces */
+    border-radius: 5px; /* Radio del borde para hacerlos redondeados */
+}
+
+.header nav ul li a:hover {
+  color: #ff9900; /* Cambia el color del texto en el hover */
+  background-color: black;
+}
+
+.container {
+    display: flex;
+}
+
+.descripcion {
+    flex: 1;
+    padding-left: 10px;
+    border: 1px;
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+    padding: 15px; /* Espaciado interno */
+    padding-top: 4px;
+    border: 0px solid #ccc; /* Borde con color */
+    border-radius: 5px; /* Radio del borde para hacerlo redondeado */
+    margin: 10px 10px ; /* Margen exterior */
+    text-align: justify; /* Justificar el texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    max-width: 800px; /* Ancho máximo del párrafo */
+    height: 100vh;
+}
+
+.sucursales {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    border: 0px solid #ccc; /* Borde con color */
+    border-radius: 5px; /* Radio del borde para hacerlo redondeado */
+    margin: 10px 150px ; /* Margen exterior */
+    text-align: justify; /* Justificar el texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    max-width: 800px; /* Ancho máximo del párrafo */
+
+}
+
+.sucursales h6 {
+    padding-left: 0px;
+    margin: 4px;
+}
+
+footer {
+    background-color: black; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    border-top: 50px solid #333; /* Borde superior */
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1); /* Sombra debajo */
+}
+
+footer ul {
+    padding-left: 4px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}
