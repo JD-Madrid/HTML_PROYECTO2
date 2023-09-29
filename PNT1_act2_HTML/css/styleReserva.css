@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');/*Letra del titulo*/ 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap'); /*Letra de sucursales*/
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #F1EFEF;
+}
+
+main {
+    text-align: center;
+}
+
+header {
+    background-color: black; /* Color de fondo de la cabecera */
+    padding: 10px; /* Espacio interno en la cabecera para separar el contenido */
+    text-align: center; /* Alineación del texto en el centro */
+}
+
+header H1 {
+    font-family: 'Roboto Slab', serif;
+    background-color: #ff9900; /* Color de fondo del h1 */
+    border-radius: 10px; /* Radio del borde para hacerlo redondeado */
+    padding: 16px 30px ; /* Espaciado interno para separar el texto del borde */
+    display: inline-block; /* Hace que el h1 se ajuste automáticamente al contenido */
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+header h5 {
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    margin: 10px;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta-de-sucursales {
+    width: 320px;
+    height: 370px;
+    color: black;
+    /* background: grey; */
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tarjeta-de-sucursales img {
+    width: 340px;
+    height: 360px;
+}
+
+.tarjeta-de-sucursales p {
+    font-family: 'Dancing Script', cursive;;
+    margin-top: 0px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label{
+   background-color:black ;
+   color: white;
+   border: 5px solid #ff9900;
+}
+
+#boton-sucursal {
+    background: #35A29F;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 5px;
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#boton-sucursal:hover {
+    background-color: black;
+    border: 2px solid #ff9900;
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+    background-color: black; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    border-top: 50px solid #333; /* Borde superior */
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1); /* Sombra debajo */
+}
+
+footer ul {
+    padding-left: 4px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}

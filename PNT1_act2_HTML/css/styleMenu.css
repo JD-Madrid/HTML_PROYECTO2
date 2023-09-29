@@ -15,19 +15,8 @@ main {
 
 header {
     background-color: black; /* Color de fondo de la cabecera */
-    color: black; /* Color del texto en la cabecera */
     padding: 30px; /* Espacio interno en la cabecera para separar el contenido */
     text-align: center; /* Alineación del texto en el centro */  
-}
-
-header h5 {
-    color: white;
-    padding-top: 20px;
-}
-
-#subtitulo {
-    margin: 20px;
-    font-style: italic;
 }
 
 h1 {
@@ -37,6 +26,17 @@ h1 {
     padding: 16px 30px; /* Espaciado interno para separar el texto del borde */
     display: inline-block; /* Hace que el h1 se ajuste automáticamente al contenido */
     margin-bottom: 0px;
+}
+
+header h5 {
+    color: white;
+    padding-top: 20px;
+    font-style: italic;
+}
+
+#subtitulo {
+    margin: 20px;
+    font-style: italic;
 }
 
 .sucursales {

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/styleReserva.css">
+    <script src="./js/reserva.js"></script>
+    <title>Reserva</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1><a class="navbar-brand" href="./inicio.html">Restaurante Los Pibes</a></h1>
+            <h5>Reservas</h5>
+        </header>
+
+        <section id="seleccionar-sucursal">
+            <div class="tarjetas">
+                <input type="radio" id="suc-palermo" name="sucursal">
+                <label class="tarjeta-de-sucursales" for="suc-palermo">
+                    <p>Gurruchaga 1332 - Palermo</p>
+                    <img src="./images/palermoSOHO.jpg" alt="Palermo">
+                </label>
+
+                <input type="radio" id="suc-caballito" name="sucursal">
+                <label class="tarjeta-de-sucursales" for="suc-caballito">
+                    <p>Malvinas Argentinas 4040 - Caballito</p>
+                    <img src="./images/caballito.jpg" alt="Caballito">
+                </label>
+            </div>
+            <button id="boton-sucursal">Seleccionar</button>
+        </section>
+
+        <section id="hacer-reserva">
+            <h2 id="reserva-cliente"></h2>
+
+            <!-- *******************Sin terminar ****************-->
+            <form >
+                <input list="personas" name="personas">
+                <datalist id="personas">
+                    <option value="1 persona">
+                    <option value="2 personas">
+                    <option value="3 personas">
+                    <option value="4 personas">
+                    <option value="5 personas">
+                </datalist>
+                <input type="enviar">
+            </form>
+
+
+
+
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p>Redes Sociales</p>
+        <ul>
+            <li><a href="https://www.instagram.com/tu_cuenta_de_instagram/" target="_blank"><i
+                        class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/tu_cuenta_de_facebook/" target="_blank"><i
+                        class="fa fa-facebook"></i></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
