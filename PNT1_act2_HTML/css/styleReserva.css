@@ -69,6 +69,7 @@ header h5 {
 
 input {
     display: none;
+    width: 250px;
 }
 
 input:checked + label{
@@ -92,6 +93,30 @@ input:checked + label{
 #boton-sucursal:hover {
     background-color: black;
     border: 2px solid #ff9900;
+}
+
+.recuadro {
+    border: 1px;
+    border-color: mediumspringgreen;
+    border-style: solid;
+    padding: 10px;
+}
+
+div { 
+    padding: 10px;
+}
+
+.cajas {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#botonEnviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 

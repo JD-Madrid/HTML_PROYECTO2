@@ -14,7 +14,7 @@
     <main>
         <header>
             <h1><a class="navbar-brand" href="./inicio.html">Restaurante Los Pibes</a></h1>
-            <h5>Reservas</h5>
+            <h5>Seleccione la sucursal donde quiere hacer su reserva</h5>
         </header>
 
         <section id="seleccionar-sucursal">
@@ -34,29 +34,46 @@
             <button id="boton-sucursal">Seleccionar</button>
         </section>
 
-        <section id="hacer-reserva">
+        <section id="hacer-reserva" style="display: none;">
             <h2 id="reserva-cliente"></h2>
 
-            <!-- *******************Sin terminar ****************-->
-            <form >
-                <input list="personas" name="personas">
-                <datalist id="personas">
-                    <option value="1 persona">
-                    <option value="2 personas">
-                    <option value="3 personas">
-                    <option value="4 personas">
-                    <option value="5 personas">
-                </datalist>
-                <input type="enviar">
+            <form class="recuadro">
+                <div class="cajas">
+                    <label for="txtNombreApellido" id="lblNombreApellido">Nombre y Apellido*: </label>
+                    <input type="text" name="NombreApellido" id="txtNombreApellido" placeholder="Nombre y Apellido" style="display: block;"required />
+                </div> 
+
+                <div class="cajas">
+                    <label for="txtCorreo" id="lblUsuario">Correo*: </label>
+                    <input type="text" name="Usuario" id="txtCorreo" placeholder="Correo" style="display: flex;"/>
+                    <!--   <span class="textoChico"> Validado con JS</span> -->
+                </div>
+                  
+                <div class="cajas">
+                    <label for="txtFecha" id="txtFecha">Fecha*: </label>
+                    <input type="date" name="fecha" id="txtFecha" placeholder="Fecha" style="display: block;" required />
+                </div>
+
+                <div class="cajas">
+                    <label for="txtTelefono" id="lblUsuario">Teléfono:* </label>
+                    <input type="text" name="Telefono" id="txtTelefono" placeholder="Ingrese 10 dígitos" style="display: block;" required />
+                    <!-- <span class="textoChico"> Validado con JS</span> -->
+                </div>
+
+                <div class="cajas">
+                    <label for="sector" id="sector">Sector</label>
+                    <select>
+                        <option value="1">Patio</option>
+                        <option value="2">Interior</option>
+                        <option value="3">VIP</option>
+                    </select>
+                </div>
+
+                <div class="cajas">
+                    <input type="submit" value="Enviar" id="botonEnviar">
+                </div>
             </form>
-
-
-
-
-
         </section>
-
-
     </main>
     <footer>
         <p>Redes Sociales</p>
