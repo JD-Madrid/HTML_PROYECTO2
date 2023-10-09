@@ -14,7 +14,7 @@
     <main>
         <header>
             <h1><a class="navbar-brand" href="./inicio.html">Restaurante Los Pibes</a></h1>
-            <h5>Seleccione la sucursal donde quiere hacer su reserva</h5>
+            <h5 id="titulo-sucursal">Seleccione la sucursal donde quiere hacer su reserva</h5>
         </header>
 
         <section id="seleccionar-sucursal">
@@ -37,30 +37,30 @@
         <section id="hacer-reserva" style="display: none;">
             <h2 id="reserva-cliente"></h2>
 
-            <form class="recuadro">
-                <div class="cajas">
+            <form class="recuadro" onsubmit="enviarDatos();">
+                <div 
                     <label for="txtNombreApellido" id="lblNombreApellido">Nombre y Apellido*: </label>
-                    <input type="text" name="NombreApellido" id="txtNombreApellido" placeholder="Nombre y Apellido" style="display: block;"required />
+                    <input type="text" name="NombreApellido" id="txtNombreApellido" placeholder="Nombre y Apellido" style="display: flex;" required />
                 </div> 
 
-                <div class="cajas">
+                <div 
                     <label for="txtCorreo" id="lblUsuario">Correo*: </label>
                     <input type="text" name="Usuario" id="txtCorreo" placeholder="Correo" style="display: flex;"/>
                     <!--   <span class="textoChico"> Validado con JS</span> -->
                 </div>
                   
-                <div class="cajas">
+                <div 
                     <label for="txtFecha" id="txtFecha">Fecha*: </label>
                     <input type="date" name="fecha" id="txtFecha" placeholder="Fecha" style="display: block;" required />
                 </div>
 
-                <div class="cajas">
+                <div 
                     <label for="txtTelefono" id="lblUsuario">Teléfono:* </label>
                     <input type="text" name="Telefono" id="txtTelefono" placeholder="Ingrese 10 dígitos" style="display: block;" required />
                     <!-- <span class="textoChico"> Validado con JS</span> -->
                 </div>
 
-                <div class="cajas">
+                <div
                     <label for="sector" id="sector">Sector</label>
                     <select>
                         <option value="1">Patio</option>
@@ -68,10 +68,9 @@
                         <option value="3">VIP</option>
                     </select>
                 </div>
-
-                <div class="cajas">
-                    <input type="submit" value="Enviar" id="botonEnviar">
-                </div>
+                
+                <input type="submit" value="Enviar" id="botonEnviar">
+               
             </form>
         </section>
     </main>

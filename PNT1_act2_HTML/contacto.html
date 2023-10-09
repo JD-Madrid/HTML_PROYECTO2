@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Restaurante Los Pibes</title>
+    <link rel="stylesheet" href="./css/styleContact.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+</head>
+
+<body>
+    <header>
+        <h1><a class="navbar-brand" href="./inicio.html">Restaurante Los Pibes</a></h1>
+    </header>
+
+    <div class="container">
+        <h1>Contacto</h1>
+        <p>¿Tienes alguna pregunta o comentario? ¡No dudes en ponerte en contacto con nosotros!</p>
+    
+        <form id="formulario">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label><br>
+            <input type="text" class="form-control" id="nombre"  placeholder="Ingrese su nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label><br>
+            <input type="email" class="form-control" id="email"  placeholder="Ingrese su email" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label><br>
+            <textarea class="form-control" id="mensaje" rows="5"  placeholder="Ingrese si mensaje"required></textarea>
+          </div>
+          <button type="submit" id="boton-enviar" class="boton-enviar">Enviar mensaje</button>
+        </form>
+    </div>
+
+    <footer>
+      <p>Redes Sociales</p>
+      <ul>
+          <li><a href="https://www.instagram.com/tu_cuenta_de_instagram/" target="_blank"><i
+                      class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/tu_cuenta_de_facebook/" target="_blank"><i
+                      class="fa fa-facebook"></i></a></li>
+      </ul>
+    </footer>
+    
+    <script src="./js/contacto.js"></script>
+</body>
+</html>
